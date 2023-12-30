@@ -7,8 +7,8 @@ const STORAGE_KEY = "feedback-form-state";
 
 function handleFormInput(event) {
     const formData = {
-    email: (form.elements.email.value).trim(),
-    message: (form.elements.message.value).trim(),
+    email: (form.elements.email.value.trim()),
+    message: (form.elements.message.value.trim()),
     }
     localStorage.setItem("feedback-form-state", JSON.stringify(formData));
 }
